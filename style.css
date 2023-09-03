@@ -1,0 +1,849 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.flt {
+    float: left;
+    width: 100%;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.header_container {
+    border-top: 8px solid rgb(65 65 65);
+    border-bottom: 1px solid rgb(253 199 10);
+    padding: 15px 0px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuH li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 16px;
+}
+
+.menuH li a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgb(0 0 0);
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.2s all ease-in-out;
+}
+
+.menuH li a:hover,
+.menuH li a.active {
+    color: rgb(245, 163, 2);
+    transition: 0.2s all ease-in-out;
+}
+
+.book_ride a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgb(0 0 0);
+    text-transform: uppercase;
+    background-color: rgb(255 255 255);
+    border: 1px solid rgb(253 199 10);
+    border-radius: 5px;
+    padding: 10px 40px;
+    outline: none;
+    text-decoration: none;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner_image img {
+    width: 100%;
+}
+
+.banner_txt {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text1 {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 70px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transform: translateY(70%);
+    transition: 1.6s all ease;
+    opacity: 0;
+    transition-delay: 1.2s;
+    text-shadow: 0px 4px 8px rgb(0 0 0 / 40%);
+}
+
+.slick-active .text1 {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.banner_container .slick-prev.slick-arrow {
+    height: 26px;
+    width: 26px;
+    display: inline-block;
+    color: transparent;
+    border: 0px;
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+    background-color: transparent;
+}
+
+.banner_container .slick-prev.slick-arrow::before {
+    position: absolute;
+    content: '';
+    background-image: url('../images/banner-arrow-left.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.banner_container .slick-next.slick-arrow {
+    height: 26px;
+    width: 26px;
+    display: inline-block;
+    color: transparent;
+    border: 0px;
+    position: absolute;
+    right: 12%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+    background-color: transparent;
+}
+
+.banner_container .slick-next.slick-arrow::before {
+    position: absolute;
+    content: '';
+    background-image: url('../images/banner-arrow-right.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+.banner_image {
+    position: relative;
+}
+.banner_image::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 15%);
+}
+.about_container {
+    padding: 50px 0px 80px 0px;
+    background: rgb(245 245 245);
+}
+
+.about_head {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    color: rgb(30 35 41);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about_container .row {
+    align-items: center;
+}
+
+.about_right {
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(51 51 51);
+}
+
+.why_container {
+    padding: 50px 0px;
+    background-image: url(../images/why-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.why_box {
+    background-color: rgb(255 255 255);
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px 10px;
+    border: 5px solid transparent;
+    transition: 0.2s all ease-in-out;
+}
+
+.why_box:hover {
+    border: 5px solid rgb(245, 163, 2);
+    transition: 0.2s all ease-in-out;
+}
+
+.why_head {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.why_txt {
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(51 51 51);
+    margin-top: 30px;
+}
+
+.gallery_container {
+    padding: 50px 0px;
+    background-color: rgb(240, 243, 255);
+}
+
+.gallery_head {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    color: rgb(30 35 41);
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.gallery_cont .col-sm-3 {
+    padding: 0px !important;
+}
+
+.gallery_image {
+    padding: 8px;
+}
+
+.gallery_image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.testimonial_container {
+    padding: 40px 0px 100px 0px;
+    background: linear-gradient(180deg, rgb(240 243 255) 0%, rgb(153 172 251) 100%);
+    position: relative;
+}
+
+.testimonial_head {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    color: rgb(30 35 41);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.testimonial_box {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 30px;
+    transition: 0.3s all ease-in-out;
+}
+
+.testimonial_slide {
+    position: relative;
+    transition: 0.3s all ease-in-out;
+    margin: 0px 16px;
+}
+
+.testimonial_image {
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.testimonial_image img {
+    margin: 0% auto;
+    border-radius: 50%;
+    border: 1px solid rgb(165 165 165);
+}
+
+.testimonial_name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(30 35 41);
+}
+
+.testimonial_designation {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgb(162 162 162);
+    margin: 5px 0px 10px 0px;
+}
+
+.testimonial_msg {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(42 47 53);
+}
+
+.testimonial_slide::before {
+    content: '';
+    left: 0px;
+    top: 0px;
+    background-color: rgb(245, 163, 2);
+    height: 3px;
+    width: 45%;
+    position: absolute;
+    transition: 0.3s all ease-in-out;
+}
+
+.testimonial_slide::after {
+    content: '';
+    left: 0px;
+    top: 0px;
+    background-color: rgb(245, 163, 2);
+    height: 55%;
+    width: 3px;
+    position: absolute;
+    transition: 0.3s all ease-in-out;
+}
+
+.testimonial_slide:hover::before {
+    left: 55%;
+    transition: 0.3s all ease-in-out;
+}
+
+.testimonial_slide:hover::after {
+    top: 55%;
+    transition: 0.3s all ease-in-out;
+}
+
+.testimonial_box::before {
+    content: '';
+    right: 0px;
+    bottom: 0px;
+    background-color: rgb(245, 163, 2);
+    height: 3px;
+    width: 45%;
+    position: absolute;
+    transition: 0.3s all ease-in-out;
+}
+
+.testimonial_box::after {
+    content: '';
+    right: 0px;
+    bottom: 0px;
+    background-color: rgb(245, 163, 2);
+    height: 55%;
+    width: 3px;
+    position: absolute;
+    transition: 0.3s all ease-in-out;
+}
+
+.testimonial_box:hover::before {
+    right: 55%;
+}
+
+.testimonial_box:hover::after {
+    bottom: 45%;
+}
+
+
+
+.testimonial_cont .slick-prev.slick-arrow {
+    height: 26px;
+    width: 26px;
+    display: inline-block;
+    color: transparent;
+    border: 0px;
+    position: absolute;
+    left: 44%;
+    bottom: -60px;
+    z-index: 9;
+    background-color: transparent;
+}
+
+.testimonial_cont .slick-prev.slick-arrow::before {
+    position: absolute;
+    content: '';
+    background-image: url('../images/testimonial-arrow-left.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.testimonial_cont .slick-next.slick-arrow {
+    height: 26px;
+    width: 26px;
+    display: inline-block;
+    color: transparent;
+    border: 0px;
+    position: absolute;
+    right: 44%;
+    bottom: -60px;
+    z-index: 9;
+    background-color: transparent;
+}
+
+.testimonial_cont .slick-next.slick-arrow::before {
+    position: absolute;
+    content: '';
+    background-image: url('../images/testimonial-arrow-right.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.testimonial_car {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.contact_container {
+    padding: 50px 0px;
+}
+
+.contact_head {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    color: rgb(30 35 41);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact_map iframe {
+    border-radius: 10px;
+}
+
+.contact_list li {
+    list-style-type: none;
+    margin-bottom: 16px;
+    position: relative;
+    padding-left: 40px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgb(51, 51, 51);
+}
+
+.contact_list li a {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+
+.contact_list li img {
+    position: absolute;
+    left: 0px;
+    top: 4px;
+}
+
+.contact_title {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: rgb(0 0 0);
+    margin-bottom: 33px;
+}
+
+.contact_title span {
+    color: rgb(245, 163, 2);
+}
+
+.contact_book {
+    margin-top: 50px;
+}
+
+.contact_book a {
+    display: flex;
+    align-items: center;
+    background: rgb(245 163 2);
+    border-radius: 13px;
+    width: 225px;
+    justify-content: center;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+
+.contact_book span {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: rgb(0 0 0);
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.contact_container {
+    position: relative;
+}
+
+.contact_image {
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+}
+
+.footer_container {
+    background-image: url(../images/footer-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 45px 0px 40px 0px;
+    text-align: center;
+}
+
+.footer_link {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.footer_link li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 16px;
+}
+
+.footer_link li a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgb(255 255 255) !important;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.social_media li {
+    display: inline-block;
+    padding: 0px 13px;
+}
+
+.copyright {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgb(255 255 255);
+    position: relative;
+    margin-top: 30px;
+}
+
+.copyright::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -25px;
+    transform: translateX(-50%);
+    background-color: rgb(255 255 255);
+    height: 1px;
+    width: 50%;
+}
+.copyright a {
+    color: rgb(255,255,255) !important;
+}
+
+/* Media Query */
+
+@media (max-width: 767px) {
+    .hide_mobile {
+        display: none !important;
+    }
+
+    .menuH {
+        height: 100%;
+        width: 0px;
+        position: fixed;
+        z-index: 999999;
+        top: 0;
+        right: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+        background-color: rgb(255 255 255);
+        box-shadow: 0px 2px 20px 0px rgb(0 0 0 / 24%);
+        text-align: left;
+    }
+
+    .menuH li {
+        float: left;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .book_ride {
+        margin-top: 10px;
+        padding: 0px 20px !important;
+    }
+
+    .menuH li a {
+        float: left;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .menuH_close {
+        padding: 10px 20px;
+    }
+
+    .about_left img {
+        width: 100%;
+    }
+
+    .testimonial_car img {
+        width: 100%;
+    }
+
+    .about_left {
+        margin-bottom: 30px;
+    }
+
+    .why_box {
+        margin-bottom: 30px;
+    }
+
+    .contact_image {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 40px;
+        float: left;
+        width: 100%;
+        margin-bottom: -50px;
+    }
+    .contact_image img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .text1 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .banner_container .slick-prev.slick-arrow {
+        height: 20px;
+        width: 20px;
+        left: 10px;
+    }
+
+    .banner_container .slick-next.slick-arrow {
+        height: 20px;
+        width: 20px;
+        right: 10px;
+    }
+
+    .testimonial_cont .slick-prev.slick-arrow {
+        left: 35%;
+    }
+
+    .testimonial_cont .slick-next.slick-arrow {
+        right: 35%;
+    }
+    .contact_right {
+        margin-top: 40px;
+    }
+    .footer_link li {
+        float: left;
+        width: 50%;
+        padding: 5px 0px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 639px) {
+    .text1 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .banner_container .slick-prev.slick-arrow {
+        left: 25px;
+    }
+
+    .banner_container .slick-next.slick-arrow {
+        right: 25px;
+    }
+
+    .testimonial_cont .slick-prev.slick-arrow {
+        left: 40%;
+    }
+
+    .testimonial_cont .slick-next.slick-arrow {
+        right: 40%;
+    }
+    .contact_right {
+        margin-top: 40px;
+    }
+    .footer_link li {
+        float: left;
+        width: 50%;
+        padding: 5px 0px;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+    .text1 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .banner_container .slick-prev.slick-arrow {
+        left: 10px;
+    }
+
+    .banner_container .slick-next.slick-arrow {
+        right: 10px;
+    }
+    .footer_link li {
+        padding: 0px 5px;
+    }
+    .about_container .col-sm-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .why_container .col-sm-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .why_box {
+        text-align: center;
+        padding: 40px 5px;
+    }
+    .testimonial_container .col-sm-5 {
+        display: none;
+    }
+    .testimonial_container .col-sm-7 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .menuH li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 0px 6px;
+    }
+    .menuH li a {
+        font-size: 10px;
+    }
+    .book_ride a {
+        font-size: 10px;
+        line-height: 13px;
+        padding: 10px 20px;
+    }
+    .text1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .about_left img {
+        width: 100%;
+    }
+    .why_container .col-sm-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 30px;
+    }
+    .why_box {
+        padding: 40px 50px;
+        margin-bottom: 30px;
+    }
+    .testimonial_container .col-sm-5 {
+        display: none;
+    }
+    .testimonial_container .col-sm-7 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .contact_image {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 40px;
+        float: left;
+        width: 100%;
+        margin-bottom: -50px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .about_left img {
+        width: 100%;
+    }
+    .why_txt {
+        font-size: 16px;
+    }
+    .testimonial_car {
+        position: absolute;
+        left: 0px;
+        bottom: 75px;
+        width: 40%;
+    }
+    .testimonial_car img {
+        width: 100%;
+    }
+    .contact_image {
+        right: 10px;
+        width: 25%;
+    }
+    .contact_image img {
+        width: 100%;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1365px) { 
+    .testimonial_car {
+        bottom: 50px;
+        width: 42%;
+    }
+    .testimonial_car img {
+        width: 100%;
+    }
+    .contact_image {
+        right: 10px;
+        width: 28%;
+    }
+    .contact_image img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .hide_desktop {
+        display: none !important;
+    }
+}
